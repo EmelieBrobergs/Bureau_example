@@ -6,11 +6,15 @@ class Program
     {
         string contents = "";
 
-        System.Console.WriteLine("Öppnar byrålådan...");
+        System.Console.WriteLine("Byrålådan...");
 
         while (true)
         {
-            System.Console.Write("Vad vill du lägga i lådan: ");
+            System.Console.WriteLine("Välj en låda: ");
+            System.Console.WriteLine("[A] - översta lådan");
+            System.Console.WriteLine("[B] - mittersta lådan");
+            System.Console.WriteLine("[C] - nedersta lådan");
+            System.Console.WriteLine("[Q] - Avsluta programmet");
             string input = Console.ReadLine();
 
             if (input.ToLower() == "q" || input.ToLower() == "inget")
